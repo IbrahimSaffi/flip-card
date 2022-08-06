@@ -7,6 +7,9 @@ function App() {
   return (
     <>
       <NavBar />
+      <>
+      List of articles
+      </>
       <CardList />
     </>
   );

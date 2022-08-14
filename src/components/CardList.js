@@ -8,14 +8,17 @@ const Cards = styled.div`
   flex-wrap:wrap;
   padding:20px;
   width:100vw;
-  gap:2%;
+  gap:4vw;
+  padding-left:2.5vw;
+  padding-right:2.5vw;
 ;`
 let arr = new Array(10).fill("")
+console.log(data.articles)
 const CardList = () => {
   return (
     <Cards>
-{arr.map((ele,i)=>{
- return <Card index ={i}/>
+{data.articles.map((ele,i)=>{
+ return <Card title={ele.title} desc ={ele.description} img={ele.image}/>
 })}
     </Cards>
   );
